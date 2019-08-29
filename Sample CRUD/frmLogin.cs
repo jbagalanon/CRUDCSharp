@@ -10,12 +10,12 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace Sample_CRUD
 {
-    public partial class Form1 : Form
+    public partial class frmLogin : Form
     {
         SqlConnection cn = new SqlConnection(@"Data Source=SERVER\SQLEXPRESS;Initial Catalog=CRUD_db;Integrated Security=True");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
-        public Form1()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -49,7 +49,7 @@ namespace Sample_CRUD
                 if (found ==true)
                 {
                     MessageBox.Show("Welcome " + name, "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Form2 f2 = new Form2(this);
+                    frmStudentEntry f2 = new frmStudentEntry(this);
                     f2.getUser(name);
                     f2.LoadRecord();
                     txtPass.Clear();

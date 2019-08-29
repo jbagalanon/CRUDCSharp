@@ -10,14 +10,14 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace Sample_CRUD
 {
-    public partial class Form2 : Form
+    public partial class frmStudentEntry : Form
     {
         SqlConnection cn = new SqlConnection(@"Data Source=SERVER\SQLEXPRESS;Initial Catalog=CRUD_db;Integrated Security=True");
         SqlCommand cm = new SqlCommand();
         SqlDataReader dr;
-        Form1 fr1;
+        frmLogin fr1;
         string _studentno, _lnamem, _fname, _mi, _tracks;
-        public Form2(Form1 f1)
+        public frmStudentEntry(frmLogin f1)
         {
             InitializeComponent();
             fr1 = f1;

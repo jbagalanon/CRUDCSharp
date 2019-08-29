@@ -1,6 +1,6 @@
 ﻿namespace Sample_CRUD
 {
-    partial class Form2
+    partial class frmStudentEntry
     {
         /// <summary>
         /// Required designer variable.
