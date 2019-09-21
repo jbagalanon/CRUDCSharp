@@ -26,6 +26,7 @@ namespace Sample_CRUD
         }
 
         private void button1_Click(object sender, EventArgs e)
+        //this is a button login
         {
             try
             {
@@ -69,6 +70,8 @@ namespace Sample_CRUD
         }
 
         private void button2_Click(object sender, EventArgs e)
+            //this is exit button
+
         {
             if(MessageBox.Show("Are you sure you want to exit this application?", "Exit App",MessageBoxButtons.YesNo , MessageBoxIcon.Information)== DialogResult.Yes)
             {
